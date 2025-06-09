@@ -161,7 +161,6 @@
     <ClInclude Include="src\unit_tests\benchmark.h" />
     <ClInclude Include="src\unit_tests\color_test.h" />
     <ClInclude Include="src\unit_tests\fourier3_test.h" />
-    <ClInclude Include="src\unit_tests\gpe_test.h" />
     <ClInclude Include="src\unit_tests\mandelbrot_test.h" />
     <ClInclude Include="src\unit_tests\plot_test.h" />
     <ClInclude Include="src\unit_tests\processbar.h" />
@@ -171,7 +170,6 @@
     <ClInclude Include="src\unit_tests\sim\sim.h" />
     <ClInclude Include="src\unit_tests\spin_test.h" />
     <ClInclude Include="src\unit_tests\test.h" />
-    <ClInclude Include="src\unit_tests\two_atom_test.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\library\numer\include\numer_visualize.cpp" />
@@ -181,13 +179,11 @@
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\unit_tests\color_test.cpp" />
     <ClCompile Include="src\unit_tests\fourier3_test.cpp" />
-    <ClCompile Include="src\unit_tests\gpe_test.cpp" />
     <ClCompile Include="src\unit_tests\mandelbrot_test.cpp" />
     <ClCompile Include="src\unit_tests\plot_test.cpp" />
     <ClCompile Include="src\unit_tests\simul_test.cpp" />
     <ClCompile Include="src\unit_tests\sim\ho1d_sim.cpp" />
     <ClCompile Include="src\unit_tests\spin_test.cpp" />
-    <ClCompile Include="src\unit_tests\two_atom_test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -96,9 +96,6 @@
     <ClInclude Include="src\unit_tests\color_test.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="src\unit_tests\gpe_test.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="src\unit_tests\plot_test.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -115,9 +112,6 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="src\unit_tests\test.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="src\unit_tests\two_atom_test.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="src\unit_tests\mandelbrot_test.h">
@@ -146,9 +140,6 @@
     <ClCompile Include="src\unit_tests\color_test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\unit_tests\gpe_test.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="src\unit_tests\plot_test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -156,9 +147,6 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\unit_tests\spin_test.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\unit_tests\two_atom_test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\main.cpp">
