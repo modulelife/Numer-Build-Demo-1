@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{8574e244-bb06-497b-ac2d-0b22e79ffc8b}</ProjectGuid>
+    <RootNamespace>NumerDemo1</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <AdditionalIncludeDirectories>$(SolutionDir)\src\library\stbi\include;$(SolutionDir)\src\library\numer\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <AdditionalIncludeDirectories>$(SolutionDir)\src\library\stbi\include;$(SolutionDir)\src\library\numer\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <AdditionalIncludeDirectories>$(SolutionDir)\src\library\stbi\include;$(SolutionDir)\src\library\numer\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <AdditionalIncludeDirectories>$(SolutionDir)\src\library\stbi\include;$(SolutionDir)\src\library\numer\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="src\library\numer\include\numer_common.h" />
+    <ClInclude Include="src\library\numer\include\numer_complex.h" />
+    <ClInclude Include="src\library\numer\include\numer_constant.h" />
+    <ClInclude Include="src\library\numer\include\numer_cube.h" />
+    <ClInclude Include="src\library\numer\include\numer_eigenfunc.h" />
+    <ClInclude Include="src\library\numer\include\numer_file.h" />
+    <ClInclude Include="src\library\numer\include\numer_fourier.h" />
+    <ClInclude Include="src\library\numer\include\numer_grid.h" />
+    <ClInclude Include="src\library\numer\include\numer_indexer.h" />
+    <ClInclude Include="src\library\numer\include\numer_mat.h" />
+    <ClInclude Include="src\library\numer\include\numer_matrix.h" />
+    <ClInclude Include="src\library\numer\include\numer_mat_utils.h" />
+    <ClInclude Include="src\library\numer\include\numer_plot.h" />
+    <ClInclude Include="src\library\numer\include\numer_qmkit.h" />
+    <ClInclude Include="src\library\numer\include\numer_visualize.h" />
+    <ClInclude Include="src\library\stbi\include\stbi.h" />
+    <ClInclude Include="src\library\stbi\include\stbi_image_loader.h" />
+    <ClInclude Include="src\library\stbi\include\stbi_image_writer.h" />
+    <ClInclude Include="src\library\stbi\include\stbi_pixel_type.h" />
+    <ClInclude Include="src\library\stbi\include\stbi_resizer.h" />
+    <ClInclude Include="src\library\stbi\include\stb_origin\stb_image.h" />
+    <ClInclude Include="src\library\stbi\include\stb_origin\stb_image_resize2.h" />
+    <ClInclude Include="src\library\stbi\include\stb_origin\stb_image_write.h" />
+    <ClInclude Include="src\unit_tests\benchmark.h" />
+    <ClInclude Include="src\unit_tests\color_test.h" />
+    <ClInclude Include="src\unit_tests\fourier3_test.h" />
+    <ClInclude Include="src\unit_tests\gpe_test.h" />
+    <ClInclude Include="src\unit_tests\mandelbrot_test.h" />
+    <ClInclude Include="src\unit_tests\plot_test.h" />
+    <ClInclude Include="src\unit_tests\processbar.h" />
+    <ClInclude Include="src\unit_tests\simul_test.h" />
+    <ClInclude Include="src\unit_tests\simul_utils.h" />
+    <ClInclude Include="src\unit_tests\sim\ho1d_sim.h" />
+    <ClInclude Include="src\unit_tests\sim\sim.h" />
+    <ClInclude Include="src\unit_tests\spin_test.h" />
+    <ClInclude Include="src\unit_tests\test.h" />
+    <ClInclude Include="src\unit_tests\two_atom_test.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\library\numer\include\numer_visualize.cpp" />
+    <ClCompile Include="src\library\stbi\include\stbi_image_loader.cpp" />
+    <ClCompile Include="src\library\stbi\include\stbi_image_writer.cpp" />
+    <ClCompile Include="src\library\stbi\include\stbi_resizer.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\unit_tests\color_test.cpp" />
+    <ClCompile Include="src\unit_tests\fourier3_test.cpp" />
+    <ClCompile Include="src\unit_tests\gpe_test.cpp" />
+    <ClCompile Include="src\unit_tests\mandelbrot_test.cpp" />
+    <ClCompile Include="src\unit_tests\plot_test.cpp" />
+    <ClCompile Include="src\unit_tests\simul_test.cpp" />
+    <ClCompile Include="src\unit_tests\sim\ho1d_sim.cpp" />
+    <ClCompile Include="src\unit_tests\spin_test.cpp" />
+    <ClCompile Include="src\unit_tests\two_atom_test.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\library\numer\include\numer_common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\library\numer\include\numer_complex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\library\numer\include\numer_constant.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\library\numer\include\numer_cube.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\library\numer\include\numer_eigenfunc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\library\numer\include\numer_file.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\library\numer\include\numer_fourier.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\library\numer\include\numer_grid.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\library\numer\include\numer_indexer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\library\numer\include\numer_mat.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\library\numer\include\numer_mat_utils.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\library\numer\include\numer_matrix.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\library\numer\include\numer_plot.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\library\numer\include\numer_qmkit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\library\numer\include\numer_visualize.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\library\stbi\include\stb_origin\stb_image.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\library\stbi\include\stb_origin\stb_image_resize2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\library\stbi\include\stb_origin\stb_image_write.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\library\stbi\include\stbi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\library\stbi\include\stbi_image_loader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\library\stbi\include\stbi_image_writer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\library\stbi\include\stbi_pixel_type.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\library\stbi\include\stbi_resizer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\unit_tests\sim\ho1d_sim.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\unit_tests\sim\sim.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\unit_tests\benchmark.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\unit_tests\color_test.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\unit_tests\gpe_test.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\unit_tests\plot_test.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\unit_tests\processbar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\unit_tests\simul_test.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\unit_tests\simul_utils.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\unit_tests\spin_test.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\unit_tests\test.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\unit_tests\two_atom_test.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\unit_tests\mandelbrot_test.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\unit_tests\fourier3_test.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\library\numer\include\numer_visualize.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\library\stbi\include\stbi_image_loader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\library\stbi\include\stbi_image_writer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\library\stbi\include\stbi_resizer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\unit_tests\sim\ho1d_sim.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\unit_tests\color_test.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\unit_tests\gpe_test.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\unit_tests\plot_test.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\unit_tests\simul_test.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\unit_tests\spin_test.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\unit_tests\two_atom_test.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\unit_tests\mandelbrot_test.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\unit_tests\fourier3_test.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
