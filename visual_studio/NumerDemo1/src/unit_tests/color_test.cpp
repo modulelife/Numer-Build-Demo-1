@@ -66,7 +66,7 @@ void ColorTest::run()
 
 		auto img_num = mat<double>::creat_par(img, GrayScale(0.0, 1.0));
 
-		auto img_re = mat<RGB>::creat_par(img_num, Color::Vaporwave());
+		auto img_re = mat<RGB>::creat_par(img_num, Color::Rainbow());
 
 		writer.writeInto("./image/color/newcolor", img_re[0], img_re.ncols(), img_re.nrows());
 	}
