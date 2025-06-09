@@ -1,0 +1,2 @@
+this is a example project in visual studio
+you can use it directly or as a start-up for your development
