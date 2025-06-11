@@ -120,6 +120,9 @@
     <ClInclude Include="src\unit_tests\fourier3_test.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="src\unit_tests\sim\cgle_sim.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\library\numer\include\numer_visualize.cpp">
@@ -156,6 +159,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\unit_tests\fourier3_test.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\unit_tests\sim\cgle_sim.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

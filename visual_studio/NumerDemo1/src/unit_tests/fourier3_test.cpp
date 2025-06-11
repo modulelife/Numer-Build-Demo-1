@@ -29,7 +29,7 @@ void Fourier3Test::run()
 	stbi::ImageLoader loader;
 
 
-	loader.load("./image/fourier/testimg/chongqing.jpg", stbi::LOAD_RGB);
+	loader.load("./image/fourier/testimg/neon.jpg", stbi::LOAD_RGB);
 	mat<RGB> img(loader.height(), loader.width());
 	loader.putInto(img.begin());
 
@@ -56,7 +56,10 @@ void Fourier3Test::run()
 		};
 
 	auto vimg = mat<cvec3>::creat(img, RGB_to_cvec3);
+
+	BENCHMARK_BEGIN(fft);
 	fft2d_ortho_par(vimg);
+	BENCHMARK_END(fft);
 
 	auto amp_img = mat<RGB>::creat(vimg, cvec3_to_RGB);
 	centralize(amp_img);

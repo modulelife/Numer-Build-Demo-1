@@ -12,6 +12,7 @@
 #include <memory>
 #include "sim/sim.h"
 #include "sim/ho1d_sim.h"
+#include "sim/cgle_sim.h"
 
 using namespace numer;
 
@@ -28,12 +29,30 @@ void SimulTest::run()
 	std::cout << "\n>..SimulTest: begin" << std::endl;
 	BENCHMARK_BEGIN(simuul_test);
 
-	SimImagePath path_keeper("ho1d", START_FRAME);
 
 	BENCHMARK_BEGIN(pre_computation);
-	std::unique_ptr<Sim> up_sim = std::make_unique<HO1dSim>(FRAMES);
+	std::unique_ptr<Sim> up_sim;
+	std::string sim_name;
+	unsigned op;
+	std::cout << "\n\tchoose a simulation:\n\t\t1.1D Harmonic Oscillator\n\t\t2.Ginzburg-Landau Equation\n\t\tenter: ";
+	std::cin >> op;
+
+	switch (op) {
+	case 1:
+		up_sim = std::make_unique<HO1dSim>(FRAMES);
+		sim_name = "ho1d";
+		break;
+	case 2:
+		up_sim = std::make_unique<CGLESim>(FRAMES);
+		sim_name = "cgle";
+		break;
+	default:
+		return;
+		break;
+	}
 	BENCHMARK_END(pre_computation);
 
+	SimImagePath path_keeper(sim_name, START_FRAME);
 	stbi::ImageWriter<stbi::format::PNG> img_w;
 
 
@@ -56,6 +75,7 @@ void SimulTest::run()
 
 	tk_process.stop();
 
+	
 	std::cout << "\n>..SimulTest: end" << std::endl;
 	BENCHMARK_END(simuul_test);
 }

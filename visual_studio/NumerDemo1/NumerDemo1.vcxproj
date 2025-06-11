@@ -166,6 +166,7 @@
     <ClInclude Include="src\unit_tests\processbar.h" />
     <ClInclude Include="src\unit_tests\simul_test.h" />
     <ClInclude Include="src\unit_tests\simul_utils.h" />
+    <ClInclude Include="src\unit_tests\sim\cgle_sim.h" />
     <ClInclude Include="src\unit_tests\sim\ho1d_sim.h" />
     <ClInclude Include="src\unit_tests\sim\sim.h" />
     <ClInclude Include="src\unit_tests\spin_test.h" />
@@ -182,6 +183,7 @@
     <ClCompile Include="src\unit_tests\mandelbrot_test.cpp" />
     <ClCompile Include="src\unit_tests\plot_test.cpp" />
     <ClCompile Include="src\unit_tests\simul_test.cpp" />
+    <ClCompile Include="src\unit_tests\sim\cgle_sim.cpp" />
     <ClCompile Include="src\unit_tests\sim\ho1d_sim.cpp" />
     <ClCompile Include="src\unit_tests\spin_test.cpp" />
   </ItemGroup>
