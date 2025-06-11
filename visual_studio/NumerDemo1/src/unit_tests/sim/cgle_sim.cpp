@@ -19,19 +19,19 @@ using namespace numer;
 
 static const char* WF_FILE_PATH = "./image/simul/cgle/glfield";
 constexpr unsigned FREAM_INTERVAL = 5;
-constexpr double dt = 1.0 / (20.0 * FREAM_INTERVAL);
+constexpr double dt = 1.0 / (1.0 * FREAM_INTERVAL);
 constexpr unsigned N1 = 720;
 constexpr unsigned N2 = 1280;
-constexpr double L1 = 100.0;
+constexpr double L1 = 500.0;
 
 
 
 //∂Ψ/∂t = (ε + ib)∇²Ψ + cΨ - (d + ie)|Ψ|²Ψ
-constexpr double ep = 0.1;
-constexpr double b = 1.3;
-constexpr double c = 0.75;
-constexpr double d = 0.8;
-constexpr double e = -0.5;
+constexpr double ep = 1.0;
+constexpr double b = 0.0;
+constexpr double c = 1.0;
+constexpr double d = 1.0;
+constexpr double e = 1.2;
 
 static mat<Complex> initialize(unsigned N1_, unsigned N2_) {
 	mat<Complex> result(N1_, N2_);
@@ -42,7 +42,10 @@ static mat<Complex> initialize(unsigned N1_, unsigned N2_) {
 	std::uniform_real_distribution<double> pha_distr(0.0, 2.0 * Pi);
 
 	result.refill([&](size_t i, size_t j) {
-		return Complex::expi(pha_distr(rand_eng)) * amp_distr(rand_eng);
+		if (j <= N2_ / 2)
+			return Complex::expi(pha_distr(rand_eng)) * amp_distr(rand_eng);
+		else
+			return Complex::zero();
 		});
 
 	return result;
@@ -107,7 +110,7 @@ mat<RGB> CGLESim::renderFrame() {
 	//------------------------------------preparation----------------------------------
 
 	//∂Ψ/∂t = (ε + ib)∇²Ψ + cΨ - (d + ie)|Ψ|²Ψ
-	
+
 	const double L2 = profile_.L1 * profile_.N2 / profile_.N1;
 
 	const auto nonlin_phs = [=](const Complex& spatio_) {
@@ -156,11 +159,11 @@ mat<RGB> CGLESim::renderFrame() {
 		//TSSP substep3
 		tssp1();
 	}
-	
+
 
 	//-------------------------------------render--------------------------------------
 
-	CompressedHeatMap heatmap(0.0, 1.5, Color::CoolTech());
+	CompressedHeatMap heatmap(0.6, 1.0, Color::Sandstone());
 	const auto colorizer = [&](const Complex& c) {
 		return heatmap(c.amplitude());
 		};

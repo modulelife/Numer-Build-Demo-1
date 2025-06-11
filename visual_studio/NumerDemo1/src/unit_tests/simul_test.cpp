@@ -19,7 +19,7 @@ using namespace numer;
 
 
 constexpr unsigned FRAMES = 180;
-constexpr unsigned START_FRAME = 00;
+constexpr unsigned START_FRAME = 0;
 
 
 
@@ -34,7 +34,7 @@ void SimulTest::run()
 	std::unique_ptr<Sim> up_sim;
 	std::string sim_name;
 	unsigned op;
-	std::cout << "\n\tchoose a simulation:\n\t\t1.1D Harmonic Oscillator\n\t\t2.Ginzburg-Landau Equation\n\t\tenter: ";
+	std::cout << "\n\tchoose a simulation:\n\t\t1.1D Harmonic Oscillator\n\t\t2.Ginzburg-Landau Equation\n\n\tenter: ";
 	std::cin >> op;
 
 	switch (op) {
