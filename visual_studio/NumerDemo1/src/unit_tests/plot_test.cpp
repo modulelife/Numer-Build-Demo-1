@@ -36,7 +36,10 @@ void PlotTest::run()
 
 
 	HydrogenState nlm(4, 3, 0, 0.02);
-	Cartes3Adp nlm_in_xyz(nlm);
+	const auto weighed_nlm = [&](double r, double tht, double phi) {
+		return r * nlm(r, tht, phi);
+		};
+	Cartes3Adp nlm_in_xyz(weighed_nlm);
 	
 
 	BENCHMARK_BEGIN(render);
@@ -44,9 +47,9 @@ void PlotTest::run()
 	mat<RGB> wf3d_img = DensityPlot3D(720, 1280)
 		.setCamAzimuthAngle(0.4 * Pi)
 		.setCamElevationAngle(0.1 * Pi)
-		.setBrightnessGain(3.0)
+		.setBrightnessGain(1.5)
 		.setFineness(500)
-		.renderImage(nlm_in_xyz, std::function<Vec3<double>(Complex)>(gridclr::HeatMap(0.0, 2.0, LinearHeatMap(0.0, 2.0, Color::Zone_odd()))));
+		.renderImage(nlm_in_xyz, std::function<Vec3<double>(Complex)>(gridclr::HeatMap<gridclr::brt::hard>(0.0, 0.1, LinearHeatMap(0.0, 0.3, Color::AqueousBlue()))));
 
 	BENCHMARK_END(render);
 
