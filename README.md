@@ -14,6 +14,7 @@ Ensuring compliance with competition rules (e.g., originality declarations).
 Disqualification from competitions due to academic integrity violations;
 Misrepresentation of the code as "original" work;
 Technical issues or errors in the code itself.
+
 🤝 ​​Friendly Reminder​​
 This code is shared to foster learning and collaboration. If you use it as a starting point for your own projects, we encourage you to:
 
